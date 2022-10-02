@@ -1,0 +1,217 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: apple zhang, qq, LIC=YA39H-W89F2-TG17T-RU0WD-JVCYR-9V1XL
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.12.0.0
+Toolchain Path:  D:\Program Files (x86)\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+    Target DLL: STLink\ST-LINKIII-KEIL_SWO.dll
+Dialog DLL:      TCM.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\zdy\Desktop\robotic_arm_hand\firmware.uvprojx
+Project File Date:  04/14/2022
+
+<h2>Output:</h2>
+Build target 'robot_firmware'
+compiling usart.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+.\SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\usart.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=16218 RO-data=610 RW-data=148 ZI-data=2156  
+FromELF: creating hex file...
+".\HEX\firmware.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\zdy\Desktop\robotic_arm_hand\RTE
+  D:\Program Files (x86)\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0
+
+<h2>Collection of Component Files used:</h2>
+Load "C:\\Users\\zdy\\Desktop\\robotic_arm_hand\\HEX\\firmware.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+Load "C:\\Users\\zdy\\Desktop\\robotic_arm_hand\\HEX\\firmware.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+"C:\\Users\\zdy\\Desktop\\robotic_arm_hand\\HEX\\firmware.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+ line of file ends without a newline
+  #endif
+HARDWARE\GPIO.c(30): warning:  #1-D: last line of file ends without a newline
+  }
+HARDWARE\GPIO.c: 5 warnings, 0 errors
+compiling head_motor.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+.\SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\head_motor.h(7): warning:  #1295-D: Deprecated declaration Head_Rotate - give arg types
+  void Head_Rotate();
+HARDWARE\head_motor.c(17): warning:  #177-D: variable "i" was declared but never referenced
+        int i;
+HARDWARE\head_motor.c: 6 warnings, 0 errors
+compiling motor.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+.\SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\motor.c(170): warning:  #940-D: missing return statement at end of non-void function "Read_Speed_L"
+  }
+HARDWARE\motor.c(173): warning:  #940-D: missing return statement at end of non-void function "Read_Speed_R"
+  }
+HARDWARE\motor.c(201): warning:  #1-D: last line of file ends without a newline
+  }
+HARDWARE\motor.c: 7 warnings, 0 errors
+compiling usart.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+.\SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\usart.c: 4 warnings, 0 errors
+compiling MPU6050.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+.\SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\MPU6050.c(18): warning:  #177-D: variable "gyro_orientation" was declared but never referenced
+  static signed char gyro_orientation[9] = {-1, 0, 0,
+HARDWARE\MPU6050.c(44): warning:  #177-D: function "inv_orientation_matrix_to_scalar" was declared but never referenced
+  static  unsigned short inv_orientation_matrix_to_scalar(
+HARDWARE\MPU6050.c(56): warning:  #177-D: function "run_self_test" was declared but never referenced
+  static void run_self_test(void)
+HARDWARE\MPU6050.c: 7 warnings, 0 errors
+compiling IOI2C.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+.\SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\IOI2C.c: 4 warnings, 0 errors
+compiling adc.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+.\SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\adc.c: 4 warnings, 0 errors
+compiling servo.c...
+compiling buzzer.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+.\SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+HARDWARE\buzzer.c: 4 warnings, 0 errors
+compiling delay.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+SOFTWARE\delay.c(13): warning:  #550-D: variable "fac_ms" was set but never used
+  static u16 fac_ms=0;                                                  //ms延时倍乘数,在ucos下,代表每个节拍的ms数
+SOFTWARE\delay.c: 5 warnings, 0 errors
+compiling pid.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+SOFTWARE\pid.c(12): warning:  #177-D: variable "total_Effort" was declared but never referenced
+        static float p_effort,i_effort,d_effort,total_Effort;
+SOFTWARE\pid.c(38): warning:  #177-D: variable "total_Effort" was declared but never referenced
+        static float p_effort,i_effort,d_effort,total_Effort;
+SOFTWARE\pid.c: 7 warnings, 0 errors
+compiling control.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+SOFTWARE\control.c(63): warning:  #1-D: last line of file ends without a newline
+  }
+SOFTWARE\control.c(62): warning:  #177-D: variable "interval_Clock" was declared but never referenced
+        static u32 interval_Clock;
+SOFTWARE\control.c: 7 warnings, 0 errors
+compiling main.c...
+.\HARDWARE\usart.h(7): warning:  #1295-D: Deprecated declaration Usart_Process - give arg types
+  void Usart_Process();
+.\HARDWARE\usart.h(11): warning:  #1295-D: Deprecated declaration UART_CH2_Init - give arg types
+  void UART_CH2_Init();
+.\SOFTWARE\control.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\SOFTWARE\pid.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+USER\main.c: 4 warnings, 0 errors
+compiling stm32f10x_it.c...
+linking...
+Program Size: Code=16178 RO-data=610 RW-data=148 ZI-data=2156  
+FromELF: creating hex file...
+".\HEX\firmware.axf" - 0 Error(s), 64 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\zdy\Desktop\robotic_arm_hand\RTE
+  D:\Program Files (x86)\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0
+
+<h2>Collection of Component Files used:</h2>
